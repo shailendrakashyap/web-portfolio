@@ -10,7 +10,10 @@
     <meta name="author" content="Siwon" />
     <link rel="icon" type="image/png" href="imgs/etc/favicon_blue.png" />
     <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -24,7 +27,7 @@
         </div>
         <div>
             <ul class="navbar__menu">
-                <li class="navbar__menu__item active" >Home</li>
+                <li class="navbar__menu__item active">Home</li>
                 <li class="navbar__menu__item">About</li>
                 <li class="navbar__menu__item">Skills</li>
                 <li class="navbar__menu__item">My Works</li>
@@ -42,7 +45,7 @@
         <button class="home__contact">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
         <h1>About Me</h1>
         <p>
             I have studied at University of South Florida majoring in Computer Science.
@@ -88,78 +91,87 @@
                     <p class="job__name">USF IT Administration Technician</p>
                     <p class="job__period">04.2020 ~ 12.2020</p>
                 </div>
-        </div>
             </div>
         </div>
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
-        <h1>Skills</h1>
-        <h2>Skill & Attributes</h2>
-        <p>
-            Experience with all phases of the software lift-cycle,
-            Passion for learning new technologies,
-            Capable to working within a team environment and independently,
-            Ability to plan and time schedule,
-            Work under strict time pressure and adapt when needed.
-        </p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset_title">Skills</h3>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML, CSS</span>
-                        <span>90%</span>
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skill & Attributes</h2>
+            <p>
+                Experience with all phases of the software lift-cycle,
+                Passion for learning new technologies,
+                Capable to working within a team environment and independently,
+                Ability to plan and time schedule,
+                Work under strict time pressure and adapt when needed.
+            </p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML, CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%;"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Javascript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 85%;"></div>
+                        </div>
                     </div>
-                    <div class="skill__description">
-                        <span>Javascript</span>
-                        <span>85%</span>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Spring</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                    <div class="skill__description">
-                        <span>Spring</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                    <div class="skill__description">
-                        <span>Java</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                    <div class="skill__description">
-                        <span>C++</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%;"></div>
+                        </div>
+                    </div>   
+                    <div class="skill">    
+                        <div class="skill__description">
+                            <span>C++</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%;"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="tools_title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>iOS Development Tools</span></li>
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Ecllipse</span></li>
-                        <li><span>Adobe Maya</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="etc__title">etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>Mathmatics</span></li>
-                    </ul>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>iOS Development Tools</span></li>
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Ecllipse</span></li>
+                            <li><span>Adobe Maya</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>Mathmatics</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,40 +186,23 @@
             <button class="category__btn">Mobile<span class="category__count">3</span></button>
             <button class="category__btn">Back-end<span class="category__count">2</button></span>
         </div>
-        
+
         <div class="work__projects">
-            <a 
-                href="https://github.com/Siwon-Kim/momentumJS" 
-                class="project"
-                data-type="front-end"
-                target="blank"
-            >
-            <img 
-                src="imgs/projects/screenshot.png" 
-                class="project__img"
-                alt="Momentum"
-            >
-            <div class="project__description">
-                <h3>Momentum</h3>
-                <span>Clone coding with HTML, CSS, Vanilla JS</span>
-            </div>
+            <a href="https://github.com/Siwon-Kim/momentumJS" class="project" data-type="front-end" target="blank">
+                <img src="imgs/projects/screenshot.png" class="project__img" alt="Momentum">
+                <div class="project__description">
+                    <h3>Momentum</h3>
+                    <span>Clone coding with HTML, CSS, Vanilla JS</span>
+                </div>
             </a>
-            <a 
-                href="https://github.com/Siwon-Kim/paintJS" 
-                class="project"
-                data-type="front-end"
-                target="blank"
-            >
-            <img 
-                src="imgs/projects/screenshot.png" 
-                class="project__img"
-                alt="canvas">
-            <div class="project__description">
-                <h3>Canvas Tool</h3>
-                <span>Clone coding with HTML, CSS, Vanilla JS</span>
-            </div>
+            <a href="https://github.com/Siwon-Kim/paintJS" class="project" data-type="front-end" target="blank">
+                <img src="imgs/projects/screenshot.png" class="project__img" alt="canvas">
+                <div class="project__description">
+                    <h3>Canvas Tool</h3>
+                    <span>Clone coding with HTML, CSS, Vanilla JS</span>
+                </div>
             </a>
-            
+
         </div>
     </section>
     <!-- Testimonials -->
@@ -216,29 +211,23 @@
         <h3>See what they say about me</h3>
         <div class="testimonials">
             <div class="testimonial">
-                <img 
-                    src="imgs/testimonials/people.png" 
-                    alt="People" 
-                    class="testimonial__avt"
-                />
+                <img src="imgs/testimonials/people.png" alt="People" class="testimonial__avt" />
                 <div class="testimonial_speech-bubble">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Veritatis, nam dolorem nemo quo facilis beatae sed nostrum consequatur voluptatem odit quia quaerat iusto, 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Veritatis, nam dolorem nemo quo facilis beatae sed nostrum consequatur voluptatem odit quia
+                        quaerat iusto,
                         consectetur explicabo perspiciatis quisquam, voluptas dolorum nesciunt.</p>
                     <p class="name"><a href="">Ellie</a> / Samsung</p>
                 </div>
             </div>
             <div class="testimonial">
-                <img 
-                    src="imgs/testimonials/people.png" 
-                    alt="People" 
-                    class="testimonial__avt"
-                />
+                <img src="imgs/testimonials/people.png" alt="People" class="testimonial__avt" />
                 <div class="testimonial_speech-bubble">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Veritatis, nam dolorem nemo quo facilis beatae sed nostrum consequatur voluptatem odit quia quaerat iusto, 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Veritatis, nam dolorem nemo quo facilis beatae sed nostrum consequatur voluptatem odit quia
+                        quaerat iusto,
                         consectetur explicabo perspiciatis quisquam, voluptas dolorum nesciunt.</p>
                     <p class="name"><a href="">Ellie</a> / Samsung</p>
                 </div>
