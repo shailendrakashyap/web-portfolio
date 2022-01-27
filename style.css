@@ -19,7 +19,7 @@
   --font-medium: 28px;
   --font-regular: 18px;
   --font-small: 16px;
-  --font-micro: 14px;
+  --font-micro: 12px;
 
   /* Font weight */
   --weight-bold: 700;
@@ -425,4 +425,34 @@ button {
 
 .testimonial__speech-bubble a {
     color: var(--color-blue);
+}
+
+/* Contact */
+#contact {
+    background-color: var(--color-blue);
+}
+
+.contact__title,
+.contact__email,
+.contact__ {
+    color: var(--color-white);
+}
+
+.contact__title {
+    margin: 25px 0;
+}
+
+.contact__links i {
+    font-size: var(--font-large);
+    margin: 24px 7px;
+}
+
+.contact__links i:hover {
+    transform: scale(1.1);
+}
+
+#contact p {
+    color: var(--color-white);
+    font-size: var(--font-micro);
+    margin-top: 10px;
 }
