@@ -164,7 +164,7 @@ button {
 }
 
 .section__container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -172,7 +172,7 @@ button {
 .about__majors {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  margin: 50px 0;
 }
 
 .major__icon {
