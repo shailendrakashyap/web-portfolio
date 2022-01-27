@@ -1,0 +1,36 @@
+/* Global Variable */
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-blue: #3D518C;
+    --color-dark-blue: #091540;
+    --color-light-blue: #7692FF;
+    --color-black: #000000;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-skyblue: #ABD2FA;
+    --color-aqua: #303FC7;
+
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* Size */
+
+}
+
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
