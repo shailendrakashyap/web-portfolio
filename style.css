@@ -15,9 +15,9 @@
   --color-aqua: #303fc7;
 
   /* Font size */
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
+  --font-large: 45px;
+  --font-medium: 24px;
+  --font-regular: 20px;
   --font-small: 16px;
   --font-micro: 12px;
 
@@ -155,6 +155,7 @@ button {
 .home__avatar {
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
+  width: 220px;
 }
 
 .home__title,
@@ -172,9 +173,14 @@ button {
   color: var(--color-white);
 }
 
+.home__contact:hover {
+  background-color: var(--color-light-blue);
+}
+
 /* Section in common */
 .section {
   padding: 50px;
+  padding-top: 80px;
   text-align: center;
   margin: auto;
 }
@@ -317,6 +323,7 @@ button {
   font-size: var(--font-regular);
   font-weight: var(--weight-medim);
   padding: 8px 48px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -332,9 +339,10 @@ button {
   width: 24px;
   height: 24px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: -20px;
   left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -511,10 +519,20 @@ button {
 
 /* MEDIAQUERY: For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* font size */
+    --font-large: 36px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
     /* navbar */
     .navbar__toggle-btn {
         display: block;
-        margin-top: 7px;
+        top: 16px;
+        right: 16px;
+        font-size: var(--font-medium);
     }
 
     #navbar {
@@ -542,10 +560,12 @@ button {
     /* about */
     .about__majors {
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 0;
     }
 
     .major {
-        margin-bottom: 38px;
+        margin-bottom: 30px;
     }
 
     /* skills */
@@ -559,17 +579,40 @@ button {
     }
 
     .category__btn {
-        margin-bottom: 10px;
+        margin: 4px 2px;
+        width: 100%;
     }
 
     /* testimonials */
+    .testimonial {
+      flex-direction: column;
+      align-items: center;
+    }
     .testimonial__avt {
-        width: 80px;
-        height: 80px;
+      width: 120px;
+      height: 120px;
+    }
+
+    .testimonial__speech-bubble {
+      order: 1;
+    }
+
+    .testimonial__avt:nth-child(even),
+    .testimonial__avt:nth-child(odd) {
+      margin: 8px 0;
     }
 
     .testimonial__speech-bubble p {
-        font-size: var(--font-small);
+      font-size: var(--font-small);
+    }
+
+    #scroll-btn {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      line-height: 50px;
+      right: 16px;
+      bottom: 16px;
     }
 
 }
