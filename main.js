@@ -20,9 +20,20 @@ const contactBtn = document.querySelector('.home__contact');
         const target = event.target;
         const link = target.dataset.link;
         if(link == null) {
-            return
+            return;
         }
-        const scrollTo = document.querySelector(link);
-        scrollTo.scrollIntoView({behavior: "smooth"});
+        scrollIntoView(link);
     });
+})
+
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: "smooth"});
+}
+
+// fade out home page slowly when scrolling down
+const home = document.querySelector('#home');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1 - (window.scrollY / homeHeight);
 })
