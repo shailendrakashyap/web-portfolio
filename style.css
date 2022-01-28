@@ -96,12 +96,20 @@ button {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #7692ff;
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-light-blue);
+  padding: 8px;
+  z-index: 1;
 }
 
 .navbar__logo {
@@ -140,8 +148,9 @@ button {
 
 /* Home */
 #home {
-  background: url("imgs/home/background_blue.png") center/cover no-repeat;
+  background: url("imgs/home/background_full-blue.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -152,7 +161,7 @@ button {
 
 .home__title,
 .home__description {
-  color: var(--color-blue);
+  color: var(--color-white);
 }
 
 .home__contact {
@@ -160,9 +169,9 @@ button {
   font-weight: var(--weight-medim);
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid var(--color-blue);
+  border: 2px solid var(--color-white);
   border-radius: 4px;
-  color: var(--color-blue);
+  color: var(--color-white);
 }
 
 /* Section in common */
