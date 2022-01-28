@@ -12,7 +12,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
-// Handle scrolling whentapping on the navbar menu and contact button
+// Handle scrolling when tapping on the navbar menu and contact button
 const navbarMenu = document.querySelector('.navbar__menu');
 const contactBtn = document.querySelector('.home__contact');
 [navbarMenu, contactBtn].forEach((clickEvent)=>{
@@ -25,8 +25,6 @@ const contactBtn = document.querySelector('.home__contact');
         scrollIntoView(link);
     });
 });
-
-
 
 // fade out home page and scroll button slowly when scrolling down
 const home = document.querySelector('#home');
@@ -51,6 +49,31 @@ document.addEventListener('scroll', () => {
 goToTopBtn.addEventListener('click', () => {
     scrollIntoView('#home');
 });
+
+// filter projects by the type
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter == null) {
+        return;
+    }
+    projectContainer.classList.add('anim-out'); 
+
+    setTimeout(() => {
+        projects.forEach((project) => {
+            if(filter === '*' || filter === project.dataset.type) {
+                project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible');
+            }
+        });  
+        projectContainer.classList.remove('anim-out');
+    }, 300);
+}); 
+
+    
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
