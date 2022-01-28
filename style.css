@@ -139,7 +139,7 @@ button {
 
 .navbar__toggle-btn {
     position: absolute;
-    top: 18px;
+    top: 10px;
     right: 32px;
     font-size: 24px;
     color: var(--color-white);
@@ -476,6 +476,28 @@ button {
     color: var(--color-white);
     font-size: var(--font-micro);
     margin-top: 10px;
+}
+
+/* Scroll button */
+#scroll-btn {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 55px;
+  height: 55px;
+  z-index: 1;
+  font-size: 45px;
+  color: var(--color-white);
+  background-color: var(--color-light-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+#scroll-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* MEDIAQUERY: For below 768px screen width */
