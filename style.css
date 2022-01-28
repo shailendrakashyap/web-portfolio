@@ -127,13 +127,11 @@ button {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
+  border: 1px solid transparent;
 }
 
 .navbar__menu__item:hover {
+  border-color: var(--color-white);
   background-color: var(--color-blue);
 }
 
@@ -321,7 +319,7 @@ button {
   padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-blue);
   color: var(--color-white);
@@ -341,7 +339,7 @@ button {
   transition: all var(--animation-duration) ease-in;
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
@@ -401,7 +399,7 @@ button {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-skyblue);
   font-size: var(--font-medium);
 }
 
@@ -410,10 +408,10 @@ button {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -13px;
-  margin-top: 8px;
+  transform: translateX(-50%);
+  margin-top: 6px;
   background: var(--color-dark-white);
 }
 
@@ -516,11 +514,18 @@ button {
     /* navbar */
     .navbar__toggle-btn {
         display: block;
+        margin-top: 7px;
     }
 
     #navbar {
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-light-blue);
+        z-index: 1;
+    }
+
+    #navbar.navbar--dark {
+      padding: 16px;
     }
 
     .navbar__menu {
@@ -528,6 +533,10 @@ button {
         text-align: center;
         width: 100%;
         display: none;
+    }
+
+    .navbar__menu.open {
+      display: block;
     }
 
     /* about */
