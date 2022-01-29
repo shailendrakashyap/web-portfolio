@@ -85,10 +85,80 @@ workBtnContainer.addEventListener('click', (e) => {
         });  
         projectContainer.classList.remove('anim-out');
     }, 300);
-}); 
+});
 
 
-function scrollIntoView(selector) {
+
+
+// Activate the nav menu when the section is displayed
+
+// 1. Bring every section elements
+// 2. Observe all sections using IntersectionObserver
+// 3. activate the nav menu item along with the displayed section
+
+const sectionIds = [
+    '#home',
+    '#about',
+    '#skills',
+    '#work',
+    '#testimonials',
+    '#contact',
+  ];
+  const sections = sectionIds.map((id) => document.querySelector(id));
+  const navItems = sectionIds.map((id) =>
+    document.querySelector(`[data-link="${id}"]`)
+  );
+  
+  let selectedNavIndex = 0;
+  let selectedNavItem = navItems[0];
+  function selectNavItem(selected) {
+    selectedNavItem.classList.remove('active');
+    selectedNavItem = selected;
+    selectedNavItem.classList.add('active');
+  }
+
+  function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
-}
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
+  }
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3,
+  };
+  
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+        console.log('y');
+        const index = sectionIds.indexOf(`#${entry.target.id}`);
+        // when scrolling down, the page is coming up
+        if (entry.boundingClientRect.y < 0) {
+          selectedNavIndex = index + 1;
+        } else {
+          selectedNavIndex = index - 1;
+        }
+      }
+    });
+  };
+  
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  sections.forEach((section) => observer.observe(section));
+  
+  window.addEventListener('wheel', () => {
+    if (window.scrollY === 0) {
+      selectedNavIndex = 0;
+    } else if (
+      window.scrollY + window.innerHeight ===
+      document.body.clientHeight
+    ) {
+      selectedNavIndex = navItems.length - 1;
+    }
+    selectNavItem(navItems[selectedNavIndex]);
+  });
+  
+
+
+
