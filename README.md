@@ -51,13 +51,13 @@ This is Siwon's Portfolio with home, about me, skills, my work, testimonials, an
 
 
 ## Technologies-Used
-:eye_speech_bubble: HTML, CSS, Javascript
-:eye_speech_bubble: VS Code
-:eye_speech_bubble: GitHub, Git
+:eye_speech_bubble: HTML, CSS, Javascript <br >
+:eye_speech_bubble: VS Code <br >
+:eye_speech_bubble: GitHub, Git 
 
 ## Contact
-:white_heart: [Gmail](siwonkim1108@gmail.com)
-:white_heart: [University of South Florida school email](siwon@usf.edu)
+:white_heart: [Gmail](siwonkim1108@gmail.com) <br >
+:white_heart: [University of South Florida school email](siwon@usf.edu) <br>
 :white_heart: [LinkedIn](linkedin.com/in/siwon-kim/84300a207)
 
 
