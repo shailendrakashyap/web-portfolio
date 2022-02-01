@@ -9,6 +9,14 @@ This is Siwon's Portfolio with home, about me, skills, my work, testimonials, an
 
 ```
 
+## Finished-Demo
+### Web version
+![web gif]()
+
+
+### Mobile version
+![mobile gif](https://github.com/Siwon-Kim/Web-siwon-portfolio/blob/main/portfolio_mobile.gif)
+
 ## Features
 * Home
   - Profile and short descriptions
