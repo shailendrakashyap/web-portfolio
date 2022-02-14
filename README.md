@@ -1,5 +1,5 @@
 # Web-siwon-portfolio
-This is Siwon's Portfolio with home, about me, skills, my work, testimonials, and contact.
+This is Siwon's Portfolio with home, about me, my work, and contact.
 
 ## User-Stories
 ```
@@ -34,22 +34,13 @@ This is Siwon's Portfolio with home, about me, skills, my work, testimonials, an
   - Education and work experience
 
 
-* Skills
-  - Short description
-  - Skill ability with percentage bar, tools, etc
-
-
 * My Works
   - Projects that are filtered by the type of projects
   - Animation effect on the project menu buttons
   - Animation effect on the projects when the project menu button is clicked
   - Short descriptions when the user hovers each project
   - Link to GitHub repository when the user clicks each project
-
-
-* Testimonials
-  - Testimonials with profiles and statements
-
+ 
 
 * Contact
   - Contact information
@@ -68,7 +59,7 @@ This is Siwon's Portfolio with home, about me, skills, my work, testimonials, an
 ## Contact
 :white_heart: [Gmail](siwonkim1108@gmail.com) <br >
 :white_heart: [University of South Florida school email](siwon@usf.edu) <br>
-:white_heart: [LinkedIn](linkedin.com/in/siwon-kim/84300a207)
+:white_heart: [LinkedIn](http://linkedin.com/in/siwonkim1108)
 
 
 
