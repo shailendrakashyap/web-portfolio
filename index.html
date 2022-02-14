@@ -28,9 +28,7 @@
         <ul class="navbar__menu">
             <li class="navbar__menu__item active" data-link="#home">Home</li>
             <li class="navbar__menu__item" data-link="#about">About</li>
-            <li class="navbar__menu__item" data-link="#skills">Skills</li>
             <li class="navbar__menu__item" data-link="#work">My Works</li>
-            <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
             <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
 
@@ -41,9 +39,9 @@
     </nav>
     <!-- Home -->
     <section id="home">
-        <img src="imgs/home/profile.png" alt="Siwon's Profile Photo" class="home__avatar" />
+        <img src="imgs/home/siwon_profile.png" alt="Siwon's Profile Photo" class="home__avatar" />
         <h1 class="home__title">Welcome, <br />I am Siwon</h1>
-        <h2 class="home__description">A Software Developer Questioning the Status Quo</h2>
+        <h2 class="home__description">An Upcoming Software Developer Questioning the Status Quo</h2>
         <h3 class="home__description">Currently residing in Tampa, Florida</h3>
         <button class="home__contact" data-link="#contact">Contact Me</button>
     </section>
@@ -53,7 +51,6 @@
         <p>
             I have studied at University of South Florida majoring in Computer Science.
             <br />I am interested in Web Development, both front-end and back-end, and also iOS Development.
-            <br />I have created multiple web projects using HTML, CSS, JS, Java, and Spring.
         </p>
         <div class="about__majors">
             <div class="major">
@@ -61,22 +58,30 @@
                     <i class="fab fa-html5"></i>
                 </div>
                 <h2 class="major__title">Front-end</h2>
-                <div class="major__description">HTML, CSS, Javascript, <br />Web APIs</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h2 class="major__title">Mobile</h2>
-                <div class="major__description">iOS, Swift</div>
+                <div class="major__description">HTML, CSS, JavaScript,<br />React, Web APIs</div>
             </div>
             <div class="major">
                 <div class="major__icon">
                     <i class="fas fa-server"></i>
                 </div>
                 <h2 class="major__title">Back-end</h2>
-                <div class="major__description">Java, Javascript, C, C++</div>
+                <div class="major__description">Python, Django, C, C++</div>
             </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h2 class="major__title">Mobile</h2>
+                <div class="major__description">iOS, Swift, Xcode</div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <h2 class="major__title">Others</h2>
+                <div class="major__description">Git, GitHub, VSCode,<br /> Windows, Mac OS X</div>
+            </div>
+            
         </div>
         <div class="about__job">
             <div class="job">
@@ -90,95 +95,21 @@
                 <span class="job__icon">
                     <i class="fas fa-laptop-house"></i>
                 </span>
+                <div class="job__description" id="job-it">
+                    <p class="job__name">USF IT Service Desk Technician</p>
+                    <p class="job__period">06.2021 ~ 12.2021</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/about/makus_logo.png" alt="" class="job_logo">
                 <div class="job__description">
-                    <p class="job__name">USF IT Administration Technician</p>
-                    <p class="job__period">04.2020 ~ 12.2020</p>
+                    <p class="job__name">MAKUS Non-memory semiconductors solution company intern</p>
+                    <p class="job__period">06.2020 ~ 08.2020</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <div class="section__container">
-            <h1>Skills</h1>
-            <h2>Skill & Attributes</h2>
-            <p>
-                Experience with all phases of the software lift-cycle,
-                Passion for learning new technologies,
-                Capable to working within a team environment and independently,
-                Ability to plan and time schedule,
-                Work under strict time pressure and adapt when needed.
-            </p>
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML, CSS</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Javascript</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>C</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Java</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>C++</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools__list">
-                            <li><span>iOS Development Tools</span></li>
-                            <li><span>Visual Studio Code</span></li>
-                            <li><span>Ecllipse</span></li>
-                            <li><span>Adobe Maya</span></li>
-                        </ul>
-                    </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">etc</h3>
-                        <ul class="etc__list">
-                            <li><span>Git</span></li>
-                            <li><span>Mathmatics</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!-- Work -->
     <section id="work" class="section">
         <div class="section__container">
@@ -187,29 +118,15 @@
             <div class="work__categories">
                 <button class="category__btn selected" data-filter="*">All<span
                         class="category__count">8</span></button>
-                <button class="category__btn" data-filter="front-end">Front-end<span
+                <button class="category__btn" data-filter="front-end">Frontend<span
                         class="category__count">3</span></button>
-                <button class="category__btn" data-filter="mobile">Mobile<span class="category__count">3</span></button>
-                <button class="category__btn" data-filter="back-end">Back-end<span
+                <button class="category__btn" data-filter="back-end">Backend<span
                         class="category__count">2</button></span>
+                <button class="category__btn" data-filter="mobile">Mobile<span class="category__count">3</span></button>
+                
             </div>
 
             <div class="work__projects">
-                <a href="https://github.com/Siwon-Kim/JS-momentum-clone" class="project" data-type="front-end"
-                    target="blank">
-                    <img src="imgs/works/momentum_project.png" class="project__img" alt="Momentum">
-                    <div class="project__description">
-                        <h3>Momentum Clone</h3>
-                        <span>Clone coding using HTML, CSS, Vanilla JS</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Siwon-Kim/JS-canvas" class="project" data-type="front-end" target="blank">
-                    <img src="imgs/works/canvas_project.png" class="project__img" alt="canvas">
-                    <div class="project__description">
-                        <h3>Canvas Tool</h3>
-                        <span>Clone coding using HTML, CSS, Vanilla JS</span>
-                    </div>
-                </a>
                 <a href="https://github.com/Siwon-Kim/Web-siwon-portfolio" class="project" data-type="front-end"
                     target="blank">
                     <img src="imgs/works/port-project.PNG" class="project__img" alt="portfolio">
@@ -218,80 +135,67 @@
                         <span>Portfolio website using HTML, CSS, JS</span>
                     </div>
                 </a>
+                <a href="https://github.com/Siwon-Kim/JS-todayis" class="project" data-type="front-end"
+                    target="blank">
+                    <img src="imgs/works/momentum_project.png" class="project__img" alt="Momentum">
+                    <div class="project__description">
+                        <h3>Todayis... Website</h3>
+                        <span>To-do, clock and weather info website using HTML, CSS, Vanilla JS and Weather API</span>
+                    </div>
+                </a>
+                <a href="https://github.com/Siwon-Kim/JS-canvas" class="project" data-type="front-end" target="blank">
+                    <img src="imgs/works/canvas_project.png" class="project__img" alt="canvas">
+                    <div class="project__description">
+                        <h3>Canvas Tool</h3>
+                        <span>Drawing function website using HTML, CSS and Vanilla JS</span>
+                    </div>
+                </a>
+                
                 <a href="https://github.com/Siwon-Kim/iOS-flix-movie-list" class="project" data-type="mobile"
                     target="blank">
                     <img src="imgs/works/movie-project.PNG" class="project__img" alt="flix">
                     <div class="project__description">
                         <h3>Flix movie App</h3>
-                        <span>Movie list iOS app using Swift</span>
+                        <span>Movie list iOS app using Movie API</span>
+                    </div>
+                </a>
+                <a href="https://github.com/Siwon-Kim/iOS-yelp-food" class="project" data-type="mobile"
+                    target="blank">
+                    <img src="imgs/works/yelp-project.PNG" class="project__img" alt="yelp">
+                    <div class="project__description">
+                        <h3>Yelpy Food App</h3>
+                        <span>Restaurant List iOS app using Yelp API</span>
                     </div>
                 </a>
                 <a href="https://github.com/Siwon-Kim/iOS-tip-calculator" class="project" data-type="mobile"
                     target="blank">
-                    <img src="imgs/works/tip-project.PNG" class="project__img" alt="Momentum">
+                    <img src="imgs/works/tip-project.png" class="project__img" alt="Momentum">
                     <div class="project__description">
                         <h3>Tip Calculator App</h3>
                         <span>Tip Calculator iOS app using Swift</span>
                     </div>
                 </a>
-                <a href="https://github.com/Siwon-Kim/iOS-tip-calculator" class="project" data-type="mobile"
+
+                <a href="https://github.com/cass-dlcm/ttm2022" class="project" data-type="back-end"
                     target="blank">
-                    <img src="imgs/works/project.png" class="project__img" alt="Momentum">
+                    <img src="imgs/works/hackathon-project.PNG" class="project__img" alt="hackathon">
                     <div class="project__description">
-                        <h3>iOS App dev</h3>
-                        <span>Clone coding with HTML, CSS, Vanilla JS</span>
+                        <h3>TechTogether Miami Hackathon Group Project</h3>
+                        <span>CATCH-UP reminder web app using Python, Django, React and Figma</span>
                     </div>
                 </a>
-                <a href="https://github.com/Siwon-Kim/Web-basic-website" class="project" data-type="back-end"
+                <a href="https://github.com/Siwon-Kim/rest-api-profiles" class="project" data-type="back-end"
                     target="blank">
-                    <img src="imgs/works/project.png" class="project__img" alt="basic">
+                    <img src="imgs/works/django-project.png" class="project__img" alt="restapi">
                     <div class="project__description">
-                        <h3>Basic website</h3>
-                        <span>Basic website using HTML, CSS, Servlet</span>
-                    </div>
-                </a>
-                <a href="https://github.com/Siwon-Kim/Web-basic-website" class="project" data-type="back-end"
-                    target="blank">
-                    <img src="imgs/works/project.png" class="project__img" alt="Momentum">
-                    <div class="project__description">
-                        <h3>Reservation Website</h3>
-                        <span>Reservation website using Java, Spring, Tomcat, HTML, CSS, JS</span>
+                        <h3>REST API Managing User Profile</h3>
+                        <span>REST API to manage users' profile using Python, Django, Vagrant and VirtualBox</span>
                     </div>
                 </a>
             </div>
         </div>
     </section>
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-        <div class="section__container">
-            <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="imgs/testimonials/people.png" alt="People" class="testimonial__avt" />
-                    <div class="testimonial__speech-bubble">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Veritatis, nam dolorem nemo quo facilis beatae sed nostrum consequatur voluptatem odit quia
-                            quaerat iusto,
-                            consectetur explicabo perspiciatis quisquam, voluptas dolorum nesciunt.</p>
-                        <p class="name"><a href="">Unknown</a> / Unknown</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial__speech-bubble">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Veritatis, nam dolorem nemo quo facilis beatae sed nostrum consequatur voluptatem odit quia
-                            quaerat iusto,
-                            consectetur explicabo perspiciatis quisquam, voluptas dolorum nesciunt.</p>
-                        <p class="name"><a href="">Unknown</a> / Unknown</p>
-                    </div>
-                    <img src="imgs/testimonials/people.png" alt="People" class="testimonial__avt" />
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!-- Contact -->
     <section id="contact" class="section">
         <h1 class="contact__title">Let's talk!</h1>
